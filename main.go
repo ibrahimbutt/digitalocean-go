@@ -20,7 +20,7 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	// Create a slice of 10000 dummy transactions
-	transactions := make([]Transaction, 500)
+	transactions := make([]Transaction, 100)
 	for i := 0; i < len(transactions); i++ {
 		transactions[i] = Transaction{
 			ID:          fmt.Sprintf("txn%d", i+1),
